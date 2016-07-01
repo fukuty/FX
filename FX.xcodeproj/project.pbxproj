@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5000EF51D2659DB003548C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000EF41D2659DB003548C0 /* AppDelegate.swift */; };
+		A5000EFA1D2659DB003548C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5000EF81D2659DB003548C0 /* Main.storyboard */; };
+		A5000EFC1D2659DB003548C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5000EFB1D2659DB003548C0 /* Assets.xcassets */; };
+		A5000EFF1D2659DB003548C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5000EFD1D2659DB003548C0 /* LaunchScreen.storyboard */; };
+		A5000F071D265A05003548C0 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000F061D265A05003548C0 /* TimeLineTableViewController.swift */; };
+		A5000F0B1D265AA9003548C0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A5000F091D265AA9003548C0 /* LICENSE */; };
+		A5000F0C1D265AA9003548C0 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5000F0A1D265AA9003548C0 /* NCMB.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5000EF11D2659DB003548C0 /* FX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5000EF41D2659DB003548C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5000EF91D2659DB003548C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5000EFB1D2659DB003548C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5000EFE1D2659DB003548C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5000F001D2659DB003548C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5000F061D265A05003548C0 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		A5000F091D265AA9003548C0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A5000F0A1D265AA9003548C0 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NCMB.framework; sourceTree = "<group>"; };
+		A5000F0D1D265ACE003548C0 /* FX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FX-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5000EEE1D2659DB003548C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5000F0C1D265AA9003548C0 /* NCMB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5000EE81D2659DB003548C0 = {
+			isa = PBXGroup;
+			children = (
+				A5000EF31D2659DB003548C0 /* FX */,
+				A5000EF21D2659DB003548C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5000EF21D2659DB003548C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5000EF11D2659DB003548C0 /* FX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5000EF31D2659DB003548C0 /* FX */ = {
+			isa = PBXGroup;
+			children = (
+				A5000F081D265AA9003548C0 /* NCMB-5 */,
+				A5000EF41D2659DB003548C0 /* AppDelegate.swift */,
+				A5000EF81D2659DB003548C0 /* Main.storyboard */,
+				A5000EFB1D2659DB003548C0 /* Assets.xcassets */,
+				A5000EFD1D2659DB003548C0 /* LaunchScreen.storyboard */,
+				A5000F001D2659DB003548C0 /* Info.plist */,
+				A5000F061D265A05003548C0 /* TimeLineTableViewController.swift */,
+				A5000F0D1D265ACE003548C0 /* FX-Bridging-Header.h */,
+			);
+			path = FX;
+			sourceTree = "<group>";
+		};
+		A5000F081D265AA9003548C0 /* NCMB-5 */ = {
+			isa = PBXGroup;
+			children = (
+				A5000F091D265AA9003548C0 /* LICENSE */,
+				A5000F0A1D265AA9003548C0 /* NCMB.framework */,
+			);
+			path = "NCMB-5";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5000EF01D2659DB003548C0 /* FX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5000F031D2659DB003548C0 /* Build configuration list for PBXNativeTarget "FX" */;
+			buildPhases = (
+				A5000EED1D2659DB003548C0 /* Sources */,
+				A5000EEE1D2659DB003548C0 /* Frameworks */,
+				A5000EEF1D2659DB003548C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FX;
+			productName = FX;
+			productReference = A5000EF11D2659DB003548C0 /* FX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5000EE91D2659DB003548C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = sho;
+				TargetAttributes = {
+					A5000EF01D2659DB003548C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5SEDG3EX5C;
+					};
+				};
+			};
+			buildConfigurationList = A5000EEC1D2659DB003548C0 /* Build configuration list for PBXProject "FX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5000EE81D2659DB003548C0;
+			productRefGroup = A5000EF21D2659DB003548C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5000EF01D2659DB003548C0 /* FX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5000EEF1D2659DB003548C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5000EFF1D2659DB003548C0 /* LaunchScreen.storyboard in Resources */,
+				A5000EFC1D2659DB003548C0 /* Assets.xcassets in Resources */,
+				A5000F0B1D265AA9003548C0 /* LICENSE in Resources */,
+				A5000EFA1D2659DB003548C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5000EED1D2659DB003548C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5000F071D265A05003548C0 /* TimeLineTableViewController.swift in Sources */,
+				A5000EF51D2659DB003548C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5000EF81D2659DB003548C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5000EF91D2659DB003548C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5000EFD1D2659DB003548C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5000EFE1D2659DB003548C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5000F011D2659DB003548C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5000F021D2659DB003548C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5000F041D2659DB003548C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FX/NCMB-5",
+				);
+				INFOPLIST_FILE = FX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sho.FX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FX/FX-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		A5000F051D2659DB003548C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FX/NCMB-5",
+				);
+				INFOPLIST_FILE = FX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sho.FX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FX/FX-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5000EEC1D2659DB003548C0 /* Build configuration list for PBXProject "FX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5000F011D2659DB003548C0 /* Debug */,
+				A5000F021D2659DB003548C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5000F031D2659DB003548C0 /* Build configuration list for PBXNativeTarget "FX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5000F041D2659DB003548C0 /* Debug */,
+				A5000F051D2659DB003548C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5000EE91D2659DB003548C0 /* Project object */;
+}
