@@ -19,7 +19,8 @@
 		A5000F141D265F63003548C0 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000F121D265F63003548C0 /* TweetTableViewCell.swift */; };
 		A5000F151D265F63003548C0 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5000F131D265F63003548C0 /* TweetTableViewCell.xib */; };
 		A5000F201D267A06003548C0 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000F1F1D267A06003548C0 /* MyPageViewController.swift */; };
-		A5000F241D269802003548C0 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000F231D269802003548C0 /* ModalView.swift */; };
+		A5000F261D273DBA003548C0 /* toukouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000F251D273DBA003548C0 /* toukouViewController.swift */; };
+		A5000F281D2766AA003548C0 /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5000F271D2766AA003548C0 /* pencil@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,8 @@
 		A5000F121D265F63003548C0 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		A5000F131D265F63003548C0 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		A5000F1F1D267A06003548C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPageViewController.swift; path = ../MyPageViewController.swift; sourceTree = "<group>"; };
-		A5000F231D269802003548C0 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalView.swift; path = ../ModalView.swift; sourceTree = "<group>"; };
+		A5000F251D273DBA003548C0 /* toukouViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toukouViewController.swift; sourceTree = "<group>"; };
+		A5000F271D2766AA003548C0 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,19 +74,18 @@
 		A5000EF31D2659DB003548C0 /* FX */ = {
 			isa = PBXGroup;
 			children = (
+				A5000F2B1D279471003548C0 /* C */,
+				A5000F2A1D27946E003548C0 /* V */,
+				A5000F291D279465003548C0 /* M */,
+				A5000F271D2766AA003548C0 /* pencil@2x.png */,
 				A5000F081D265AA9003548C0 /* NCMB-5 */,
 				A5000EF41D2659DB003548C0 /* AppDelegate.swift */,
-				A5000F1F1D267A06003548C0 /* MyPageViewController.swift */,
-				A5000F231D269802003548C0 /* ModalView.swift */,
 				A5000EF81D2659DB003548C0 /* Main.storyboard */,
 				A5000F121D265F63003548C0 /* TweetTableViewCell.swift */,
 				A5000F131D265F63003548C0 /* TweetTableViewCell.xib */,
 				A5000EFB1D2659DB003548C0 /* Assets.xcassets */,
 				A5000EFD1D2659DB003548C0 /* LaunchScreen.storyboard */,
 				A5000F001D2659DB003548C0 /* Info.plist */,
-				A5000F061D265A05003548C0 /* TimeLineTableViewController.swift */,
-				A5000F0E1D265F04003548C0 /* Tweet.swift */,
-				A5000F101D265F24003548C0 /* TweetManager.swift */,
 				A5000F0D1D265ACE003548C0 /* FX-Bridging-Header.h */,
 			);
 			path = FX;
@@ -97,6 +98,32 @@
 				A5000F0A1D265AA9003548C0 /* NCMB.framework */,
 			);
 			path = "NCMB-5";
+			sourceTree = "<group>";
+		};
+		A5000F291D279465003548C0 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				A5000F0E1D265F04003548C0 /* Tweet.swift */,
+				A5000F101D265F24003548C0 /* TweetManager.swift */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		A5000F2A1D27946E003548C0 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		A5000F2B1D279471003548C0 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				A5000F1F1D267A06003548C0 /* MyPageViewController.swift */,
+				A5000F251D273DBA003548C0 /* toukouViewController.swift */,
+				A5000F061D265A05003548C0 /* TimeLineTableViewController.swift */,
+			);
+			name = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5000F151D265F63003548C0 /* TweetTableViewCell.xib in Resources */,
+				A5000F281D2766AA003548C0 /* pencil@2x.png in Resources */,
 				A5000EFF1D2659DB003548C0 /* LaunchScreen.storyboard in Resources */,
 				A5000EFC1D2659DB003548C0 /* Assets.xcassets in Resources */,
 				A5000F0B1D265AA9003548C0 /* LICENSE in Resources */,
@@ -177,8 +205,8 @@
 				A5000F201D267A06003548C0 /* MyPageViewController.swift in Sources */,
 				A5000F111D265F24003548C0 /* TweetManager.swift in Sources */,
 				A5000F071D265A05003548C0 /* TimeLineTableViewController.swift in Sources */,
-				A5000F241D269802003548C0 /* ModalView.swift in Sources */,
 				A5000F141D265F63003548C0 /* TweetTableViewCell.swift in Sources */,
+				A5000F261D273DBA003548C0 /* toukouViewController.swift in Sources */,
 				A5000EF51D2659DB003548C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +367,7 @@
 				A5000F051D2659DB003548C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

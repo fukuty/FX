@@ -42,9 +42,25 @@ class ModalView: UIView, UITextFieldDelegate {
     func makeUIImage() {
         
     }
+    func makeCloseBtn() {
+        let button = UIButton()
+        button.setTitle("Close", forState: UIControlState.Normal)
+        button.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+        button.addTarget(self, action: #selector(ModalView.tappedBtn(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        MyVIew.addSubview(button)
+    }
+    func tappedBtn(sender: UIButton) {
+        customDelegate?.modalView(.text!)
+        self.removeFromSuperview()
+        
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
    
 }

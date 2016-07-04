@@ -12,6 +12,9 @@ class TimeLineTableViewController: UITableViewController {
 
     let tweetManager = TweetManager.sharedInstance
     let Mytext = UITextView()
+    let myView = UIView()
+    var postImages : [UIImage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,25 +23,14 @@ class TimeLineTableViewController: UITableViewController {
         tweetManager.fetchTweets { () in
             self.tableView.reloadData()
         }
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     override func viewWillAppear(animated: Bool) {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: .Plain, target: self, action: #selector(TimeLineTableViewController.post))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: .Plain, target: self, action: #selector(TimeLineTableViewController.post))
+        
             }
     
     func post() {
-        let tweet = Tweet(text: textField.text!)
-        let myView = UIView()
-        myView.backgroundColor = UIColor(red: 0.1, green: 0.46, blue: 0.22, alpha: 1.0)
-        myView.frame.size = CGSizeMake(300, 300)
-        myView.center = self.view.center
-        self.view.addSubview(myView)
-        
+        let tweet = Tweet(text: Mytext.text!)
         tweet.save { () in
             self.tweetManager.fetchTweets { () in
                 self.tableView.reloadData()
@@ -62,7 +54,6 @@ class TimeLineTableViewController: UITableViewController {
         let tweet = tweetManager.tweets[indexPath.row]
         cell.nameLabel.text = "テスト"
         cell.tweetLabel.text = tweet.text
-        // Configure the cell...
         
         return cell
     }
@@ -72,9 +63,4 @@ class TimeLineTableViewController: UITableViewController {
     func makeTextView() {
         Mytext
     }
-    func closeBtn() {
-        let closeBtn = UIButton()
-        closeBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState)
-    }
-    
 }
