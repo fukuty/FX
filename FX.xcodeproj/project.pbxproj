@@ -21,6 +21,15 @@
 		A5000F201D267A06003548C0 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000F1F1D267A06003548C0 /* MyPageViewController.swift */; };
 		A5000F261D273DBA003548C0 /* toukouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5000F251D273DBA003548C0 /* toukouViewController.swift */; };
 		A5000F281D2766AA003548C0 /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5000F271D2766AA003548C0 /* pencil@2x.png */; };
+		A5ECE1361D29381A00373B58 /* 100shiki_top_image.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE12D1D29381A00373B58 /* 100shiki_top_image.png */; };
+		A5ECE1371D29381A00373B58 /* bookmark_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE12E1D29381A00373B58 /* bookmark_icon.png */; };
+		A5ECE1381D29381A00373B58 /* cinra_top_image.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE12F1D29381A00373B58 /* cinra_top_image.png */; };
+		A5ECE1391D29381A00373B58 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE1301D29381A00373B58 /* cover.png */; };
+		A5ECE13A1D29381A00373B58 /* facebook_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE1311D29381A00373B58 /* facebook_icon.png */; };
+		A5ECE13B1D29381A00373B58 /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE1321D29381A00373B58 /* pug.png */; };
+		A5ECE13C1D29381A00373B58 /* safari_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE1331D29381A00373B58 /* safari_icon.png */; };
+		A5ECE13D1D29381A00373B58 /* twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE1341D29381A00373B58 /* twitter_icon.png */; };
+		A5ECE13E1D29381A00373B58 /* wired_top_image.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ECE1351D29381A00373B58 /* wired_top_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +50,15 @@
 		A5000F1F1D267A06003548C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPageViewController.swift; path = ../MyPageViewController.swift; sourceTree = "<group>"; };
 		A5000F251D273DBA003548C0 /* toukouViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toukouViewController.swift; sourceTree = "<group>"; };
 		A5000F271D2766AA003548C0 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil@2x.png"; sourceTree = "<group>"; };
+		A5ECE12D1D29381A00373B58 /* 100shiki_top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100shiki_top_image.png; sourceTree = "<group>"; };
+		A5ECE12E1D29381A00373B58 /* bookmark_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_icon.png; sourceTree = "<group>"; };
+		A5ECE12F1D29381A00373B58 /* cinra_top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinra_top_image.png; sourceTree = "<group>"; };
+		A5ECE1301D29381A00373B58 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		A5ECE1311D29381A00373B58 /* facebook_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_icon.png; sourceTree = "<group>"; };
+		A5ECE1321D29381A00373B58 /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pug.png; sourceTree = "<group>"; };
+		A5ECE1331D29381A00373B58 /* safari_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safari_icon.png; sourceTree = "<group>"; };
+		A5ECE1341D29381A00373B58 /* twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_icon.png; sourceTree = "<group>"; };
+		A5ECE1351D29381A00373B58 /* wired_top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wired_top_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +137,28 @@
 		A5000F2B1D279471003548C0 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				A5ECE12C1D29381A00373B58 /* image */,
 				A5000F1F1D267A06003548C0 /* MyPageViewController.swift */,
 				A5000F251D273DBA003548C0 /* toukouViewController.swift */,
 				A5000F061D265A05003548C0 /* TimeLineTableViewController.swift */,
 			);
 			name = C;
+			sourceTree = "<group>";
+		};
+		A5ECE12C1D29381A00373B58 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				A5ECE12D1D29381A00373B58 /* 100shiki_top_image.png */,
+				A5ECE12E1D29381A00373B58 /* bookmark_icon.png */,
+				A5ECE12F1D29381A00373B58 /* cinra_top_image.png */,
+				A5ECE1301D29381A00373B58 /* cover.png */,
+				A5ECE1311D29381A00373B58 /* facebook_icon.png */,
+				A5ECE1321D29381A00373B58 /* pug.png */,
+				A5ECE1331D29381A00373B58 /* safari_icon.png */,
+				A5ECE1341D29381A00373B58 /* twitter_icon.png */,
+				A5ECE1351D29381A00373B58 /* wired_top_image.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,10 +222,19 @@
 			files = (
 				A5000F151D265F63003548C0 /* TweetTableViewCell.xib in Resources */,
 				A5000F281D2766AA003548C0 /* pencil@2x.png in Resources */,
+				A5ECE13A1D29381A00373B58 /* facebook_icon.png in Resources */,
+				A5ECE13E1D29381A00373B58 /* wired_top_image.png in Resources */,
+				A5ECE1371D29381A00373B58 /* bookmark_icon.png in Resources */,
 				A5000EFF1D2659DB003548C0 /* LaunchScreen.storyboard in Resources */,
 				A5000EFC1D2659DB003548C0 /* Assets.xcassets in Resources */,
+				A5ECE13B1D29381A00373B58 /* pug.png in Resources */,
 				A5000F0B1D265AA9003548C0 /* LICENSE in Resources */,
+				A5ECE13D1D29381A00373B58 /* twitter_icon.png in Resources */,
 				A5000EFA1D2659DB003548C0 /* Main.storyboard in Resources */,
+				A5ECE13C1D29381A00373B58 /* safari_icon.png in Resources */,
+				A5ECE1391D29381A00373B58 /* cover.png in Resources */,
+				A5ECE1381D29381A00373B58 /* cinra_top_image.png in Resources */,
+				A5ECE1361D29381A00373B58 /* 100shiki_top_image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
