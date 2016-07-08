@@ -49,7 +49,7 @@
 		A5000F131D265F63003548C0 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		A5000F1F1D267A06003548C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPageViewController.swift; path = ../MyPageViewController.swift; sourceTree = "<group>"; };
 		A5000F251D273DBA003548C0 /* toukouViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toukouViewController.swift; sourceTree = "<group>"; };
-		A5000F271D2766AA003548C0 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil@2x.png"; sourceTree = "<group>"; };
+		A5000F271D2766AA003548C0 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pencil@2x.png"; path = "../pencil@2x.png"; sourceTree = "<group>"; };
 		A5ECE12D1D29381A00373B58 /* 100shiki_top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100shiki_top_image.png; sourceTree = "<group>"; };
 		A5ECE12E1D29381A00373B58 /* bookmark_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_icon.png; sourceTree = "<group>"; };
 		A5ECE12F1D29381A00373B58 /* cinra_top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinra_top_image.png; sourceTree = "<group>"; };
@@ -95,9 +95,9 @@
 				A5000F2B1D279471003548C0 /* C */,
 				A5000F2A1D27946E003548C0 /* V */,
 				A5000F291D279465003548C0 /* M */,
-				A5000F271D2766AA003548C0 /* pencil@2x.png */,
 				A5000F081D265AA9003548C0 /* NCMB-5 */,
 				A5000EF41D2659DB003548C0 /* AppDelegate.swift */,
+				A5ECE12C1D29381A00373B58 /* image */,
 				A5000EF81D2659DB003548C0 /* Main.storyboard */,
 				A5000F121D265F63003548C0 /* TweetTableViewCell.swift */,
 				A5000F131D265F63003548C0 /* TweetTableViewCell.xib */,
@@ -137,7 +137,6 @@
 		A5000F2B1D279471003548C0 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				A5ECE12C1D29381A00373B58 /* image */,
 				A5000F1F1D267A06003548C0 /* MyPageViewController.swift */,
 				A5000F251D273DBA003548C0 /* toukouViewController.swift */,
 				A5000F061D265A05003548C0 /* TimeLineTableViewController.swift */,
@@ -148,6 +147,7 @@
 		A5ECE12C1D29381A00373B58 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				A5000F271D2766AA003548C0 /* pencil@2x.png */,
 				A5ECE12D1D29381A00373B58 /* 100shiki_top_image.png */,
 				A5ECE12E1D29381A00373B58 /* bookmark_icon.png */,
 				A5ECE12F1D29381A00373B58 /* cinra_top_image.png */,

@@ -14,12 +14,12 @@ class Tweet: NSObject {
     init(text: String) {
         self.text = text
     }
-    func save(callback: () -> Void) {
+    func save() {
         let tweetObject = NCMBObject(className: "Tweet")
         tweetObject.setObject(text, forKey: "text")
         tweetObject.saveInBackgroundWithBlock{ (error) in
             if error == nil {
-                callback()
+        
             }
         }
     }

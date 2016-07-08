@@ -9,6 +9,7 @@
 import UIKit
 
 class toukouViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
+    let tweetManager = TweetManager.sharedInstance
     
     var postImages : [UIImageView] = []
     var imageViews : [UIImageView] = []
@@ -34,12 +35,6 @@ class toukouViewController: UIViewController, UIImagePickerControllerDelegate, U
         let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "commitButtonTapped")
         kbToolBar.items = [spacer, commitButton]
         myText.inputAccessoryView = kbToolBar
-
-        
-//        NSfetchRequest() {
-//            
-//        }
-        
         
     }
     //mytextキーボードを閉じるメソッド
@@ -47,6 +42,14 @@ class toukouViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.view.endEditing(true)
     }
     
+    @IBAction func postBtn(sender: UIButton) {
+//        func post() {
+            let tweet = Tweet(text: myText.text!)
+            tweet.save()
+            print("---1---")
+//        }
+        
+    }
     
     @IBAction func tapPhotoBtn(sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
@@ -106,62 +109,9 @@ class toukouViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-//    func post() {
-//        let tweet = Tweet(text: myText.text!)
-//        tweet.save()
-//    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    
-//    func fetchTweets(callback: () -> Void) {
-//        let query = NCMBQuery(className: "Tweet")
-//        query.orderByDescending("createDate")
-//        query.findObjectsInBackgroundWithBlock { (objects, error) in
-//            if error == nil {
-//                self.tweets = []
-//                for object in objects {
-//                    let text = object.objectForKey("text") as! String
-//                    let tweet = Tweet(text: text)
-//                    self.tweets.append(tweet)
-//                    callback()
-//                }
-//            }
-//        }
-//    }
-    
 
-    
-//    //niftyから画像取得
-//    func  NSfetchRequest(callback: () -> Void) {
-//        var tempImageView : UIImageView?
-//        let query = NCMBQuery(className: "test")
-//        query.orderByDescending("createDate")
-//        query.findObjectsInBackgroundWithBlock { (objects, error) in
-//            if error == nil {
-//                for object in  objects! {
-//                    let fileName : String = (object.objectForKey("filename") as? String)!
-//                    
-//                    let fileData = NCMBFile.fileWithName(fileName, data: nil) as! NCMBFile
-//                    
-//                    fileData.getDataInBackgroundWithBlock({ (imageData: NSData?, error) in
-//                        if error != nil {
-//                        } else {
-//                            let image = UIImage(data: imageData!)//データ型変換
-//                            tempImageView = UIImageView(image: image)
-//                            print(tempImageView)
-//                            self.postImages.append(tempImageView!)
-//                            print("-----------")
-//                        }
-//                        callback()
-//                    })
-//                }
-//                
-//                
-//            }
-//        }
-//        
-//    }
-   }
+       }

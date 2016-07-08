@@ -59,7 +59,7 @@
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toukouBtn:" destination="OtK-uv-LxF" eventType="touchUpInside" id="Xbc-HH-Gin"/>
+                                    <action selector="postBtn:" destination="OtK-uv-LxF" eventType="touchUpInside" id="Gfc-Gf-JtG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -173,6 +173,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xaR-td-hJy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.015621270409768739" green="0.79188701923076921" blue="0.59932058204633865" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -191,6 +192,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CUb-io-QGd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.013416040794572358" green="0.94104567307692311" blue="0.48279479585405238" alpha="0.24590517241379312" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -206,6 +208,6 @@
         <image name="pencil.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TTJ-AO-Qp3"/>
+        <segue reference="RiY-bY-Mv2"/>
     </inferredMetricsTieBreakers>
 </document>

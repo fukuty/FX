@@ -29,15 +29,15 @@ class TimeLineTableViewController: UITableViewController {
         
             }
     
-    func post() {
-        let tweet = Tweet(text: Mytext.text!)
-        tweet.save { () in
-            self.tweetManager.fetchTweets { () in
-                self.tableView.reloadData()
-            }
-        }
-    }
+//    func post() {
+//        let tweet = Tweet(text: Mytext.text!)
+//        tweet.save()
+//            { () in
+//            self.tweetManager.fetchTweets { () in
+//                self.tableView.reloadData()
     
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
