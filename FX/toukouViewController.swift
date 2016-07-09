@@ -19,6 +19,7 @@ class toukouViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     let niftyImage = UIImageView()
     
+    @IBOutlet weak var tabView: UIView!
     
     @IBOutlet weak var selectImageView: UIImageView!
     @IBOutlet weak var myText: UITextView!
@@ -36,18 +37,41 @@ class toukouViewController: UIViewController, UIImagePickerControllerDelegate, U
         kbToolBar.items = [spacer, commitButton]
         myText.inputAccessoryView = kbToolBar
         
+        
+        makeLeftBarBtn()
+        
+        
     }
+    func makeLeftBarBtn() {
+        let Btn = UIButton()
+        Btn.frame = CGRectMake(5, 20, 60, 60)
+        Btn.setTitle("戻る", forState: UIControlState.Normal)
+        
+        Btn.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+        Btn.addTarget(self, action: #selector(toukouViewController.backBtn(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        tabView.addSubview(Btn)
+    }
+    
+    func backBtn(sender: UIButton) {
+        self.dismissViewControllerAnimated(true) {
+            
+        }
+    }
+    
     //mytextキーボードを閉じるメソッド
     func commitButtonTapped (){
         self.view.endEditing(true)
     }
-    
+    //投稿ボタン
     @IBAction func postBtn(sender: UIButton) {
-//        func post() {
             let tweet = Tweet(text: myText.text!)
-            tweet.save()
-            print("---1---")
-//        }
+        tweet.save()
+//                tweet.save { () in
+//                    self.tweetManager.fetchTweets { () in
+//                        TimeLineTableViewController.tableView.reloadData()
+//                    }
         
     }
     
@@ -77,7 +101,7 @@ class toukouViewController: UIViewController, UIImagePickerControllerDelegate, U
         selectImageView.image = info[UIImagePickerControllerEditedImage] as? UIImage
 
         let imageView = info[UIImagePickerControllerEditedImage] as? UIImage
-        let selectImageView1 = UIImageView()
+//        let selectImageView1 = UIImageView()
         selectImageView.image = imageView
         
         let imageData: NSData = UIImagePNGRepresentation(imageView!)!

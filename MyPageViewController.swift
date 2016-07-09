@@ -39,8 +39,8 @@ class MyPageViewController: UIViewController {
         backgroundView.frame.origin = CGPointMake(0, 0)
         backgroundView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6)
         self.view.addSubview(backgroundView)
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(MyPageViewController.tapBackgroundView))
-        backgroundView.addGestureRecognizer(gesture)
+//        let gesture = UITapGestureRecognizer(target: self, action: #selector(MyPageViewController.tapBackgroundView))
+//        backgroundView.addGestureRecognizer(gesture)
     }
     func setShareView(){
         shareView.frame = CGRectMake(0, self.view.frame.height, self.view.frame.width, 100)
@@ -60,8 +60,8 @@ class MyPageViewController: UIViewController {
     }
     func tapSharebtn(sender: UIButton) {
     }
-    func tapBackgroundView(){
-        backgroundView.removeFromSuperview()
-    }
+//    func tapBackgroundView(){
+//        backgroundView.removeFromSuperview()
+//    }
     
 }

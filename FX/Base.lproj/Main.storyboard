@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Toukou View Controller-->
+        <!--toukouViewController-->
         <scene sceneID="ou2-ps-Nuj">
             <objects>
-                <viewController id="OtK-uv-LxF" customClass="toukouViewController" customModule="FX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="toukouViewController" id="OtK-uv-LxF" customClass="toukouViewController" customModule="FX" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jgk-1V-nEE"/>
                         <viewControllerLayoutGuide type="bottom" id="qPV-Xs-mye"/>
@@ -62,29 +62,35 @@
                                     <action selector="postBtn:" destination="OtK-uv-LxF" eventType="touchUpInside" id="Gfc-Gf-JtG"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fx6-0u-Cb8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.031762223874854938" green="0.88367387820512822" blue="0.61417979566493908" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.62947198275862071" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3pp-mD-bWx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="myText" destination="F3o-z4-ZCH" id="Wzh-Gh-JJO"/>
                         <outlet property="selectImageView" destination="A2N-3G-tCR" id="ygd-Bp-Pst"/>
+                        <outlet property="tabView" destination="fx6-0u-Cb8" id="rCc-xw-Vdb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCD-ad-reo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1509.5" y="456.5"/>
+            <point key="canvasLocation" x="1421.5" y="468.5"/>
         </scene>
-        <!--みんなのFX-->
+        <!--TimeLineTableViewController-->
         <scene sceneID="Pcp-uA-xS0">
             <objects>
-                <tableViewController id="rBX-7p-A1m" customClass="TimeLineTableViewController" customModule="FX" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="TimeLineTableViewController" id="rBX-7p-A1m" customClass="TimeLineTableViewController" customModule="FX" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KKf-1Z-KTI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tIo-tt-8vG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetTableViewCell" id="tIo-tt-8vG">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tIo-tt-8vG" id="oew-kP-Z7M">
@@ -103,12 +109,12 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="88h-yh-gC3">
                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="MyPage">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AG0-gQ-ZU0" kind="presentation" id="kbN-yj-6Kw"/>
+                                    <segue destination="AG0-gQ-ZU0" kind="presentation" modalTransitionStyle="partialCurl" id="kbN-yj-6Kw"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -118,7 +124,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="pencil.png"/>
                                 <connections>
-                                    <segue destination="OtK-uv-LxF" kind="show" id="53w-gg-upl"/>
+                                    <action selector="pencilBtn:" destination="rBX-7p-A1m" eventType="touchUpInside" id="W9K-mZ-TuB"/>
+                                    <segue destination="OtK-uv-LxF" kind="presentation" identifier="" modalTransitionStyle="flipHorizontal" id="xlf-ea-gss"/>
                                 </connections>
                             </button>
                             <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -128,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yZ-h0-AWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854.5" y="456.5"/>
+            <point key="canvasLocation" x="725.5" y="449.5"/>
         </scene>
         <!--My Page View Controller-->
         <scene sceneID="pBz-0W-LV6">
@@ -150,10 +157,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rBX-7p-A1m" kind="show" id="TTJ-AO-Qp3"/>
+                                    <segue destination="rBX-7p-A1m" kind="show" id="JMk-0a-qbr"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -162,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWZ-zc-ofP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010.5" y="-418.5"/>
+            <point key="canvasLocation" x="1118.5" y="-543.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fNP-hO-VUu">
@@ -208,6 +215,6 @@
         <image name="pencil.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RiY-bY-Mv2"/>
+        <segue reference="JMk-0a-qbr"/>
     </inferredMetricsTieBreakers>
 </document>
