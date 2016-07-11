@@ -10,87 +10,87 @@ import UIKit
 
 class TimeLineTableViewController: UITableViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBAction func pencilBtn(sender: UIButton) {
+    }
+    
+    let tweetManager = TweetManager.sharedInstance
+    let Mytext = UITextView()
+    let myView = UIView()
+    var postImages : [UIImage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        tableView.registerNib(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "TweetTableViewCell")
+        
+        
     }
-
+    override func viewWillAppear(animated: Bool) {
+        tweetManager.fetchTweets { () in
+            self.tableView.reloadData()
+    }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return tweetManager.tweets.count
     }
-
-    /*
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("TweetTableViewCell", forIndexPath: indexPath) as! TweetTableViewCell
+        let tweet = tweetManager.tweets[indexPath.row]
+        cell.nameLabel.text = "テスト"
+        cell.tweetLabel.text = tweet.text
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    func post() {
+        let tweet = Tweet(text: Mytext.text!)
+    
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
+    
+    func  NSfetchRequest(callback: () -> Void) {
+        var tempImage : UIImage?
+        let query = NCMBQuery(className: "test")
+        query.orderByDescending("createDate")
+        query.findObjectsInBackgroundWithBlock { (objects, error) in
+            if error == nil {
+                for object in  objects! {
+                    let fileName : String = (object.objectForKey("filename") as? String)!
+                    
+                    let fileData = NCMBFile.fileWithName(fileName, data: nil) as! NCMBFile
+                    
+                    fileData.getDataInBackgroundWithBlock({ (imageData: NSData?, error) in
+                        if error != nil {
+                        } else {
+                            tempImage = UIImage(data: imageData!)
+                            self.postImages.append(tempImage!)
+                            
+                            for num in 0..<self.postImages.count {
+                                let niftyImage = UIImageView()
+                                niftyImage.image = self.postImages[num]
+                                
+//                                niftyImage.frame = CGRectMake(self.selectImageView.frame.width * CGFloat(num), 0, self.selectImageView.frame.height, self.selectImageView.frame.height)
+//                                self.selectImageView.addSubview(niftyImage)
+                            }
+                            callback()
+                        }
+                    })
+                }
+                
+            }
+            
+        }
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
